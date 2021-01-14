@@ -12,9 +12,6 @@ class Makaron
 
 };
 
-/*
-Na koniec dokonaj modyfikacji klasy Makaron potrzebnej do poprawnego usuwania obiektów klas Tagliatelle i Penne przez wskaźnik na obiekt Makaron.
-*/
 
 // Zad1
 // tutaj definicja klasy Tagliatelle

@@ -8,13 +8,12 @@
 class Penne : public Makaron
 {
   public:
-    virtual double ileMaki(unsigned P) const override
+    double ileMaki(unsigned P) const override
   {
     return (double)P;
   }
   private:
 };
-
 
 // tutaj definicja metody gotujMakaron
 Makaron* Makaron::gotujMakaron(const std::string& str)
