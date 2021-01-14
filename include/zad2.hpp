@@ -15,18 +15,12 @@ class Penne : public Makaron
   private:
 };
 
+
 // tutaj definicja metody gotujMakaron
-static Makaron* Makaron::gotujMakaron(const std::string& str)
+Makaron* Makaron::gotujMakaron(const std::string& str)
 {
   if(str.front() == str.back())
     return new Tagliatelle{3.14, 0.42, 0.1} 
   else
     return new Penne{}
 }
-
-
-/*
-
-
-
-*/
