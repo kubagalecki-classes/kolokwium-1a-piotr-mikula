@@ -5,7 +5,7 @@
 // tutaj funkcja obliczMake
 obliczMake(const std::vector<Tagliatelle>& tvec)
 {
-  double M = 0;
+  double M = 0.0;
   int size = tvec.size();
   for(auto element : tvec)
   {
@@ -15,8 +15,8 @@ obliczMake(const std::vector<Tagliatelle>& tvec)
 
   if(M > 100)
     throw(14);
-  else if(M > 50)
+  else if((M > 50) && (M <= 100))
     throw(0.5);
-  else
+  else if (M <= 50)
     return M;
 }
