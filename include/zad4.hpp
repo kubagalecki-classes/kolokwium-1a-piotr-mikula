@@ -6,11 +6,11 @@
 double obliczMake(std::vector<Tagliatelle> tvec)
 {
 	double M = 0.0;
-	temp temp = 0;
+	int i = 0;
 	for (auto it = tvec.rbegin(); it != tvec.rend(); it++)
 	{
-		temp++;
-		M += it->ileMaki(temp);
+		i++;
+		M += it->ileMaki(i);
 	}
 	if (M > 100) 
 	{
@@ -19,7 +19,7 @@ double obliczMake(std::vector<Tagliatelle> tvec)
 	}
 	else if ((M > 50) && (M <= 100))
 	{
-		double b = 10.5;
+		double b = 27.5;
 		throw(b);
 	}
 	else if (M <= 50)
