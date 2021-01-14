@@ -6,7 +6,7 @@
 double obliczMake(std::vector<Tagliatelle> tvec)
 {
 	double M = 0.0;
-	temp i = 0;
+	temp temp = 0;
 	for (auto it = tvec.rbegin(); it != tvec.rend(); it++)
 	{
 		temp++;
