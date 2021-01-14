@@ -6,12 +6,12 @@
 obliczMake(const std::vector<Tagliatelle>& tvec)
 {
   double M = 0.0;
-  int size = tvec.size();
-  for(auto element : tvec)
-  {
-    M += (element.ileMaki(size));
-    size--;
-  }
+	int temp = 0;
+	for (auto it = tvec.rbegin(); it != tvec.rend(); it++)
+	{
+		temp++;
+		M += it->ileMaki(i);
+	}
 
   if(M > 100)
     throw(14);
