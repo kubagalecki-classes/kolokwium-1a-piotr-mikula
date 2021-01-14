@@ -14,9 +14,15 @@ obliczMake(const std::vector<Tagliatelle>& tvec)
 	}
 
   if(M > 100)
-    throw(14);
+  {
+    int calkowita = 14;
+    throw(calkowita);
+  }
   else if((M > 50) && (M <= 100))
-    throw(0.5);
+  {
+		double zmiennoprzecinkowa = 0.5;
+		throw(zmiennoprzecinkowa);
+	}
   else if (M <= 50)
     return M;
 }
